@@ -1,0 +1,11 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ partial "metadata.html" . }}
+<br><br>
+{{ .Content }}
+{{ with .Params.tags }}
+  {{ range . }} {{ $href := print (absURL "tags/") (urlize .) }}
+  <a id="tag" href="{{ $href }}">{{ . }}</a>
+  {{ end }} {{ end }}
+
+{{ end }}

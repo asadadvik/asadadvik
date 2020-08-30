@@ -1,0 +1,27 @@
+{{ define "main" }}
+<h1 id="blog-title">{{ .Title }}</h1>
+<p>{{.Params.slogan}}</p>
+<p>{{.Params.desc}}</p>
+<hr />
+{{ range .Paginator.Pages.ByPublishDate.Reverse }}
+<div class="blog-post-preview">
+  <h2 class="blog-post-preview-title">
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </h2>
+  {{ partial "metadata.html" . }}
+  <!-- <a class="summary" href="{{ .RelPermalink }}"> -->
+  <p id="summary">{{ .Summary }}</p>
+
+  {{ with .Params.tags }}
+  {{ range . }} {{ $href := print (absURL "tags/") (urlize .) }}
+  <a id="tag" href="{{ $href }}">{{ . }}</a>
+  {{ end }} {{ end }}
+
+  <hr />
+</div>			
+
+
+{{ end }} 
+{{ template "_internal/pagination.html" . }}
+
+{{ end }}

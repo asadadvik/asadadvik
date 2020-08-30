@@ -1,0 +1,6 @@
+{{ $dateTime := .PublishDate.Format "2006-01-02" }}
+{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+<div class="metadata">
+<time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time> •
+<span>{{.ReadingTime}}</span> min read
+</div>
