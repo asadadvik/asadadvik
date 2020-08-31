@@ -4,6 +4,7 @@ date: 2020-08-30T17:34:46+05:30
 tags: ["canvas"]
 summary: "Culpa ad veniam est officia dolor ea. Adipisicing sint sunt dolore eiusmod mollit commodo. Id nostrud aute ad reprehenderit exercitation pariatur amet aute. Amet incididunt laborum ad aliquip velit adipisicing reprehenderit pariatur nostrud pariatur eiusmod."
 # draft: true
+featured: true
 ---
 Culpa ad veniam est officia dolor ea. Adipisicing sint sunt dolore eiusmod mollit commodo. Id nostrud aute ad reprehenderit exercitation pariatur amet aute. Amet incididunt laborum ad aliquip velit adipisicing reprehenderit pariatur nostrud pariatur eiusmod. Veniam do elit sit consequat culpa eu exercitation consequat culpa sunt anim sint id. Consectetur officia veniam duis Lorem minim enim occaecat. Tempor in est cillum occaecat nulla.
 

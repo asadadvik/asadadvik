@@ -4,6 +4,8 @@ date: 2020-08-30T17:35:14+05:30
 tags: ["whatever"]
 summary: "Eiusmod irure Lorem ea nulla adipisicing laborum fugiat. Minim quis in do exercitation anim. Exercitation irure do esse nisi consequat commodo ex aliqua adipisicing cupidatat voluptate deserunt ipsum ipsum. Culpa elit sit elit ut elit duis ex dolore officia anim velit pariatur fugiat aliquip."
 # draft: true
+featured: true
+
 ---
 Eiusmod irure Lorem ea nulla adipisicing laborum fugiat. Minim quis in do exercitation anim. Exercitation irure do esse nisi consequat commodo ex aliqua adipisicing cupidatat voluptate deserunt ipsum ipsum. Culpa elit sit elit ut elit duis ex dolore officia anim velit pariatur fugiat aliquip. Nostrud consectetur aliquip cupidatat et ut laboris fugiat officia. Voluptate Lorem duis nostrud labore nostrud.
 

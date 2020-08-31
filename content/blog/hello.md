@@ -4,6 +4,8 @@ date: 2020-08-30T15:51:49+05:30
 tags: ["hello", "world"]
 summary: "Veniam reprehenderit laboris laborum proident culpa. Cillum laborum nulla proident officia aliqua cillum commodo eu et sint ex. Aliqua ad nostrud tempor non officia aute laborum."
 # draft: true
+featured: true
+
 ---
 
 Veniam reprehenderit laboris laborum proident culpa. Cillum laborum nulla proident officia aliqua cillum commodo eu et sint ex. Aliqua ad nostrud tempor non officia aute laborum.

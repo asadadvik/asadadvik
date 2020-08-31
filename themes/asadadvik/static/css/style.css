@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap");
 
 body {
-  font-size: 18px;
+  font-size: calc(18px + (18 - 14) * ((100vw - 480px) / (1600 - 480)));
   line-height: 1.5;
   font-family: "Inter", sans-serif;
 }
@@ -38,11 +38,11 @@ body {
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-/* Homepage  starts */
+/* Post cards*/
 
 
 
@@ -52,7 +52,7 @@ body {
 
 
 
-/* HOmepage ends */
+/* Post cards ends */
 
 
 

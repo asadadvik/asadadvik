@@ -7,6 +7,31 @@
     border-radius: 9999px;
     width: 157px;
   }
+
+
+  .blog-post-card{
+      border-radius: .25rem;
+      border: 1px solid #dadada;
+      padding: .5rem 1rem;
+      margin-top: 1rem;
+      background-color: #f6fafe;
+      font-size: 16px;
+  }
+  .blog-post-card:hover{
+      border: 1px solid #3e87da;
+  }
+
+  .blog-post-card-title a{
+    text-decoration: none;
+    color: #303a45;
+  }
+  .blog-post-card-title {
+    margin-bottom: 0;
+  }
+
+  #card-metadata{
+    color: blue;
+  }
 </style>
 
 <div class="home-hero row">
@@ -27,9 +52,26 @@
   </div>
 </div>
 
-<hr>
+<hr />
 
-<h2 style="font-weight:600;font-size: 28px">Recent Writings ✍🏻</h2>
-<p>This year, I'm trying to write at least once a week. Here is some favorite from my  <a href="/blog">Blog</a>. </p>
+<h2 style="font-weight: 600; font-size: 28px">Recent Writings ✍🏻</h2>
+<p>
+  This year, I'm trying to write at least once a week. Here is some favorite
+  from my <a href="/blog">Blog</a>.
+</p>
 
-{{ end }}
+{{ range .Pages }}
+<div class="blog-post-card col-sm-5">
+  <p class="blog-post-card-title">
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </p>{{ partial "metadata.html" . }}
+
+  {{ with .Params.tags }}
+  {{ range . }} {{ $href := print (absURL "tags/") (urlize .) }}
+  <a id="tag" href="{{ $href }}">{{ . }}</a>
+  {{ end }} {{ end }}
+
+</div>
+
+{{ end }} 
+{{ end }} 
