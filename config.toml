@@ -2,7 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Asad Advik"
 theme = "asadadvik"
-paginate = 4
+paginate = 5
 
 [menu]
   [[menu.main]]

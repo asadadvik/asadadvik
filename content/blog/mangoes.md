@@ -5,7 +5,7 @@ tags: ["mangoes"]
 summary: "Adipisicing consectetur sunt et aute exercitation duis. Esse veniam occaecat sint laborum Lorem ea. Deserunt aute ipsum cupidatat do. Sint incididunt culpa ex non magna in incididunt ullamco veniam nostrud dolor. Amet est id eiusmod aliqua commodo eu aliquip aliquip sunt id fugiat nisi."
 # draft: true
 featured: true
-
+type: "post"
 ---
 Adipisicing consectetur sunt et aute exercitation duis. Esse veniam occaecat sint laborum Lorem ea. Deserunt aute ipsum cupidatat do. Sint incididunt culpa ex non magna in incididunt ullamco veniam nostrud dolor. Amet est id eiusmod aliqua commodo eu aliquip aliquip sunt id fugiat nisi.
 

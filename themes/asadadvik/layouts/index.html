@@ -16,6 +16,8 @@
       margin-top: 1rem;
       background-color: #f6fafe;
       font-size: 16px;
+      margin-left: auto;
+      margin-right: auto;
   }
   .blog-post-card:hover{
       border: 1px solid #3e87da;
@@ -29,9 +31,6 @@
     margin-bottom: 0;
   }
 
-  #card-metadata{
-    color: blue;
-  }
 </style>
 
 <div class="home-hero row">
@@ -60,18 +59,18 @@
   from my <a href="/blog">Blog</a>.
 </p>
 
-{{ range .Pages }}
-<div class="blog-post-card col-sm-5">
-  <p class="blog-post-card-title">
+
+
+{{ range first 3 .Paginator.Pages.ByPublishDate.Reverse }}
+<div class="blog-post-card col-sm-12">
+  <h4 class="blog-post-card-title">
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  </p>{{ partial "metadata.html" . }}
+  </h4>
+{{ partial "metadata.html" . }}
 
-  {{ with .Params.tags }}
-  {{ range . }} {{ $href := print (absURL "tags/") (urlize .) }}
-  <a id="tag" href="{{ $href }}">{{ . }}</a>
-  {{ end }} {{ end }}
+  
+</div>			
 
-</div>
 
 {{ end }} 
 {{ end }} 
