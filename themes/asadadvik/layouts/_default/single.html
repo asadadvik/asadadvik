@@ -6,6 +6,9 @@
 {{ with .Params.tags }}
   {{ range . }} {{ $href := print (absURL "tags/") (urlize .) }}
   <a id="tag" href="{{ $href }}">{{ . }}</a>
-  {{ end }} {{ end }}
-
+  {{ end }} 
+{{ end }}
+<br>
+<br>
+<applause-button style="width: 52px; height: 52px" color="hsl(212deg 12% 14%)" multiclap="true" ></applause-button>
 {{ end }}
