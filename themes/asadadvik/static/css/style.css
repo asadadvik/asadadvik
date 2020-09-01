@@ -20,7 +20,10 @@ body {
   }
 }
 
-
+.nav-av{
+  border-radius: 9999px;
+  width: 40px;
+}
 
 
 .nav-container {
