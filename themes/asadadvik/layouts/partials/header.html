@@ -1,6 +1,6 @@
 <div class="nav-container">
   <nav class="top-nav">
-    <img class="nav-av" src="https://avatars1.githubusercontent.com/u/37414113?s=460&v=4">
+    <a href="/"><img class="nav-av" src="https://avatars1.githubusercontent.com/u/37414113?s=460&v=4" ></a>
     {{ range .Site.Menus.main }}
     <a class="nav-link" href="{{ .URL }}">
       {{ $text := print .Name | safeHTML }} {{ $text }}
