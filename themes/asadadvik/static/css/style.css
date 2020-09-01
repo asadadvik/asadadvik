@@ -18,6 +18,9 @@ body {
   .nav-link {
     font-size: 14px !important;
   }
+  .home-avatar{
+    display: none;
+  }
 }
 
 .nav-av{
